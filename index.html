@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydehelps Inc. | Tech Excellence</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb; /* Modern Blue */
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --accent: #0f172a;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: var(--dark); background: var(--light); line-height: 1.6; }
+        header { background: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000; }
+        .logo { font-weight: 800; font-size: 1.5rem; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
+        .hero { padding: 100px 5%; text-align: center; background: linear-gradient(135deg, #1e293b 0%, #334155 100%); color: white; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.25rem; opacity: 0.9; max-width: 700px; margin: 0 auto 2rem; }
+        .btn { background: var(--primary); color: white; padding: 12px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; display: inline-block; }
+        .btn:hover { background: #1d4ed8; transform: translateY(-2px); }
+        
+        section { padding: 80px 5%; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.2rem; margin-bottom: 10px; }
+        .section-title .underline { width: 50px; height: 4px; background: var(--primary); margin: 0 auto; }
+
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+        .card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; }
+        
+        .partner-box { background: #f1f5f9; border-radius: 15px; padding: 40px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 40px; }
+        .partner-text { flex: 1; min-width: 300px; }
+        .partner-logo { flex: 0; font-size: 2rem; font-weight: bold; color: #64748b; }
+
+        footer { background: var(--accent); color: white; text-align: center; padding: 40px 5%; margin-top: 50px; }
+        .contact-info { margin-bottom: 20px; }
+        
+        @media (max-width: 768px) { .hero h1 { font-size: 2.2rem; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Hydehelps Inc.</div>
+        <nav><a href="#contact" class="btn">Contact Us</a></nav>
+    </header>
+
+    <section class="hero">
+        <h1>Excellence in Everything Tech</h1>
+        <p>A Canadian-based technology entity focused on solving complex challenges and driving digital innovation.</p>
+        <a href="#about" class="btn">Our Mission</a>
+    </section>
+
+    <section id="about">
+        <div class="section-title">
+            <h2>Our Mission</h2>
+            <div class="underline"></div>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p>Hydehelps Inc. is a tech-centered entity that excels at helping with all things technology. From architectural guidance to implementation, we empower businesses with the tools they need to thrive in a digital-first world.</p>
+        </div>
+    </section>
+
+    <section id="partnership" style="background-color: white;">
+        <div class="partner-box">
+            <div class="partner-text">
+                <h3>Global Partnership</h3>
+                <p>We are proud to be a strategic partner of <strong>Quantlake</strong>, a leading data-driven ETF portfolio firm based in France. Together, we bridge the gap between financial intelligence and technological execution.</p>
+            </div>
+            <div class="partner-logo">
+                <span style="color: #2563eb;">QUANT</span>LAKE
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="section-title">
+            <h2>Areas of Expertise</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="services-grid">
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h3>Software Engineering</h3>
+                <p>Building scalable, robust applications tailored to modern business needs.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud Solutions</h3>
+                <p>Expertise in migrating, managing, and optimizing cloud infrastructure.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Data Analytics</h3>
+                <p>Leveraging tech to drive insights, in partnership with Quantlake’s quantitative models.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="contact-info">
+            <h3>Hydehelps Inc.</h3>
+            <p>Canadian Incorporated Entity</p>
+            <p><i class="fas fa-envelope"></i> info@hydehelps.ca</p>
+        </div>
+        <p>&copy; 2024 Hydehelps Inc. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
