@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hydehelps Inc. | Tech-Centered Excellence</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="manifest" href="site.webmanifest">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
         :root {
             --primary: #2563eb;    /* Electric Blue */
@@ -26,7 +34,7 @@
 
         header { 
             background: rgba(255, 255, 255, 0.95); 
-            padding: 1.2rem 5%; 
+            padding: 1rem 5%; 
             display: flex; 
             justify-content: space-between; 
             align-items: center; 
@@ -37,7 +45,21 @@
             backdrop-filter: blur(10px);
         }
 
-        .logo { 
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .header-logo-img {
+            height: 40px;
+            width: auto;
+            border-radius: 4px;
+            object-fit: contain;
+        }
+
+        .logo-text { 
             font-weight: 800; 
             font-size: 1.4rem; 
             color: var(--dark); 
@@ -45,12 +67,11 @@
             letter-spacing: -0.5px; 
         }
 
-        .logo span { 
+        .logo-text span { 
             color: var(--primary); 
             font-weight: 300; 
         }
 
-        /* Hero Section */
         .hero { 
             padding: 120px 5%; 
             text-align: center; 
@@ -84,6 +105,8 @@
             transition: 0.3s; 
             display: inline-block; 
             box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+            border: none;
+            cursor: pointer;
         }
 
         .btn:hover { 
@@ -91,7 +114,6 @@
             box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6); 
         }
 
-        /* Partnership Section */
         .partnership-banner {
             background: white;
             padding: 60px 5%;
@@ -121,7 +143,6 @@
         .location-mark { font-size: 0.8rem; letter-spacing: 2px; font-weight: 700; color: var(--slate); }
         .location-mark strong { color: var(--primary); display: block; font-size: 1.1rem; }
 
-        /* Services Grid */
         section { padding: 100px 5%; }
         .section-title { text-align: center; margin-bottom: 60px; }
         .section-title h2 { font-size: 2.4rem; font-weight: 800; margin-bottom: 10px; }
@@ -161,9 +182,8 @@
             text-align: center; 
         }
 
-        .footer-content { max-width: 600px; margin: 0 auto; }
         .footer-logo { font-size: 1.8rem; font-weight: 800; margin-bottom: 20px; }
-        .footer-email { color: var(--primary); text-decoration: none; font-weight: 700; font-size: 1.2rem; }
+        .footer-logo span { color: var(--primary); font-weight: 300; }
 
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
@@ -175,8 +195,11 @@
 <body>
 
     <header>
-        <div class="logo">HYDE<span>HELPS</span></div>
-        <nav><a href="mailto:info@hydehelps.ca" class="btn">Get in Touch</a></nav>
+        <a href="#" class="header-brand">
+            <img src="logo.jpg" alt="Hydehelps Logo" class="header-logo-img">
+            <div class="logo-text">HYDE<span>HELPS</span></div>
+        </a>
+        <nav><a href="mailto:info@hydehelps.ca" class="btn">Contact</a></nav>
     </header>
 
     <section class="hero">
@@ -212,13 +235,13 @@
             </div>
 
             <div class="card">
-                <i class="fas fa-cloud-network"></i>
+                <i class="fas fa-cloud"></i>
                 <h3>Cloud Infrastructure</h3>
                 <p>Architecting secure, scalable AWS/Azure environments with a focus on DevSecOps and automated deployment workflows.</p>
             </div>
 
             <div class="card">
-                <i class="fas fa-layer-group"></i>
+                <i class="fas fa-code"></i>
                 <h3>Full-Stack Solutions</h3>
                 <p>Bespoke software development built for performance. We handle everything from database architecture to modern frontend interfaces.</p>
             </div>
@@ -232,13 +255,11 @@
     </section>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-logo">HYDE<span>HELPS</span> INC.</div>
-            <p style="opacity: 0.6; margin-bottom: 30px;">A Canadian Incorporated Entity focusing on technical excellence and global partnerships.</p>
-            <a href="mailto:info@hydehelps.ca" class="footer-email">info@hydehelps.ca</a>
-            <div style="margin-top: 50px; font-size: 0.8rem; opacity: 0.4;">
-                &copy; 2026 Hydehelps Inc. All Rights Reserved.
-            </div>
+        <div class="footer-logo">HYDE<span>HELPS</span> INC.</div>
+        <p style="opacity: 0.6; margin-bottom: 30px;">A Canadian Incorporated Entity focusing on technical excellence and global partnerships.</p>
+        <a href="mailto:info@hydehelps.ca" style="color: var(--primary); text-decoration: none; font-weight: 700; font-size: 1.2rem;">info@hydehelps.ca</a>
+        <div style="margin-top: 50px; font-size: 0.8rem; opacity: 0.4;">
+            &copy; 2026 Hydehelps Inc. All Rights Reserved.
         </div>
     </footer>
 
