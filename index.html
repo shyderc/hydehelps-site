@@ -12,39 +12,27 @@
         :root {
             --ql-navy: #0f172a;      
             --ql-purple: #6366f1;    
-            --hh-accent: #818cf8;    /* Hydehelps Indigo */
-            --glass: rgba(255, 255, 255, 0.03);
-            --border: rgba(255, 255, 255, 0.1);
+            --hh-accent: #818cf8;    
         }
 
         * { box-sizing: border-box; }
         body { font-family: 'Inter', sans-serif; margin: 0; color: var(--ql-navy); background: #ffffff; line-height: 1.6; }
 
-        /* REFINED DOUBLE-H LOGO (CSS) */
+        /* HYDEHELPS BRANDING */
         .hh-logo-wrapper { display: flex; align-items: center; gap: 12px; }
         .hh-symbol {
             width: 38px; height: 38px;
-            position: relative;
             display: flex; align-items: center; justify-content: center;
             background: linear-gradient(135deg, var(--hh-accent), #4f46e5);
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
         }
-        /* Creating the Interlocking H effect */
-        .hh-symbol::before {
-            content: ""; width: 18px; height: 18px;
-            border-left: 4px solid white; border-right: 4px solid white;
-            position: absolute;
-        }
-        .hh-symbol::after {
-            content: ""; width: 12px; height: 4px; background: white;
-            position: absolute;
-        }
+        .hh-symbol img { width: 24px; height: 24px; } /* Use the SVG download below */
 
         .hh-text { font-weight: 800; font-size: 1.2rem; letter-spacing: -0.5px; text-transform: uppercase; color: var(--ql-navy); }
         .hh-text span { color: var(--hh-accent); font-weight: 400; }
 
-        /* HEADER */
+        /* SECTIONS */
         header { 
             background: #ffffff; padding: 1rem 5%; 
             display: flex; justify-content: space-between; align-items: center; 
@@ -58,35 +46,22 @@
             display: flex; align-items: center; gap: 8px; border: 1px solid #ddd6fe;
         }
 
-        /* HERO */
         .hero { 
             padding: 120px 5%; 
             background: radial-gradient(circle at top right, #1e1b4b, #0f172a); 
             color: white; position: relative; overflow: hidden;
         }
-        .hero h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 1.5rem; max-width: 850px; line-height: 1.1; }
-        .hero p { font-size: 1.3rem; color: #cbd5e1; max-width: 650px; margin-bottom: 2.5rem; font-weight: 300; }
 
-        .btn { 
-            background: var(--ql-purple); color: white; padding: 14px 32px; border-radius: 6px; 
-            text-decoration: none; font-weight: 600; transition: 0.3s; display: inline-block;
-        }
-        .btn:hover { background: #4f46e5; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3); }
-
-        /* PARTNERSHIP SECTION */
         .partnership { padding: 100px 5%; background: #f8fafc; text-align: center; }
         .partnership-box { 
             max-width: 1000px; margin: 0 auto; background: white; padding: 60px; 
             border-radius: 20px; border: 1px solid #e2e8f0;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.03);
         }
         .partner-row { display: flex; justify-content: center; align-items: center; gap: 40px; margin-bottom: 30px; }
-        .partner-label { text-transform: uppercase; font-size: 0.8rem; font-weight: 800; color: var(--hh-accent); letter-spacing: 3px; margin-bottom: 20px; }
 
-        /* EXPERTISE GRID */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 80px 5%; max-width: 1250px; margin: 0 auto; }
         .card { padding: 45px; border-radius: 16px; border: 1px solid #e2e8f0; transition: 0.4s; background: #fff; }
-        .card:hover { border-color: var(--hh-accent); transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+        .card:hover { border-color: var(--hh-accent); transform: translateY(-10px); }
         .card i { color: var(--hh-accent); font-size: 2.2rem; margin-bottom: 25px; }
 
         footer { background: var(--ql-navy); color: white; padding: 80px 5%; text-align: center; border-top: 4px solid var(--hh-accent); }
@@ -96,35 +71,34 @@
 
     <header>
         <div class="hh-logo-wrapper">
-            <div class="hh-symbol"></div>
+            <div class="hh-symbol"><img src="hydehelps-logo.svg" alt="H"></div>
             <div class="hh-text">HYDE<span>HELPS</span></div>
             <div class="alliance-tag">
                 <i class="fas fa-shield-check"></i> QUANTLAKE PARTNER
             </div>
         </div>
-        <nav><a href="mailto:steve@hydehelps.ca" class="btn">Contact Steve</a></nav>
+        <nav><a href="mailto:steve@hydehelps.ca" style="background: var(--ql-purple); color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600;">Contact Steve</a></nav>
     </header>
 
     <section class="hero">
-        <img src="Quantlake logo opt1 for the black background.svg" alt="Quantlake" style="height: 45px; margin-bottom: 30px;">
-        <h1>Strategic Engineering for Quantitative Excellence.</h1>
-        <p>Providing the North American technical backbone for Quantlake's systematic investment strategies and behavioral risk modeling.</p>
-        <a href="mailto:steve@hydehelps.ca" class="btn">Partnership Inquiry</a>
+        <img src="Quantlake-logo-opt2-purple.svg" alt="Quantlake" style="height: 45px; margin-bottom: 30px;">
+        <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.1;">Strategic Engineering for Quantitative Excellence.</h1>
+        <p style="font-size: 1.3rem; color: #cbd5e1; max-width: 650px;">Providing the technical backbone for Quantlake's systematic investment strategies.</p>
     </section>
 
     <section class="partnership">
         <div class="partnership-box">
-            <div class="partner-label">North American Strategic Alliance</div>
+            <div style="text-transform: uppercase; font-size: 0.8rem; font-weight: 800; color: var(--hh-accent); letter-spacing: 3px; margin-bottom: 20px;">Strategic Alliance</div>
             <div class="partner-row">
                 <div class="hh-logo-wrapper">
-                    <div class="hh-symbol" style="width: 45px; height: 45px;"></div>
+                    <div class="hh-symbol" style="width: 45px; height: 45px;"><img src="hydehelps-logo.svg" alt="H"></div>
                     <div class="hh-text" style="font-size: 1.5rem;">HYDE<span>HELPS</span></div>
                 </div>
                 <div style="font-size: 1.5rem; color: #cbd5e1;"><i class="fas fa-plus"></i></div>
-                <img src="Quantlake logo opt1 for the white background.svg" alt="Quantlake" style="height: 40px;">
+                <img src="Quantlake-logo-opt2-white.svg" alt="Quantlake" style="height: 40px;">
             </div>
             <p style="font-size: 1.2rem; color: #475569; max-width: 700px; margin: 0 auto;">
-                Translating international quantitative innovation into professional-grade, resilient infrastructure for the North American financial ecosystem.
+                Bridging global quantitative innovation with resilient infrastructure for the North American financial ecosystem.
             </p>
         </div>
     </section>
@@ -138,22 +112,22 @@
         <div class="card">
             <i class="fas fa-brain"></i>
             <h3>Behavioral Analytics</h3>
-            <p>Scaling the Quantlake Herd Index™ to help investors identify market extremes and manage bias.</p>
+            <p>Scaling the Quantlake Herd Index™ to help investors manage market emotional extremes.</p>
         </div>
         <div class="card">
             <i class="fas fa-shield-check"></i>
             <h3>Institutional Scale</h3>
-            <p>Bridging global strategies with Canadian and US regulatory and technical requirements.</p>
+            <p>Aligning global strategies with Canadian and US regulatory requirements.</p>
         </div>
     </div>
 
     <footer>
         <div class="hh-logo-wrapper" style="justify-content: center; margin-bottom: 20px;">
-            <div class="hh-symbol" style="background: white;"><style>.hh-symbol[style*="white"]::before, .hh-symbol[style*="white"]::after { background-color: var(--ql-navy); border-color: var(--ql-navy); }</style></div>
+            <div class="hh-symbol" style="background: white;"><img src="hydehelps-logo-inverted.svg" alt="H"></div>
             <div class="hh-text" style="color: white; font-size: 1.5rem;">HYDE<span>HELPS</span> INC.</div>
         </div>
-        <p style="color: #94a3b8; margin-bottom: 30px;">Strategic Partner to Quantlake.com</p>
-        <a href="mailto:steve@hydehelps.ca" style="color: var(--hh-accent); text-decoration: none; font-weight: 700; font-size: 1.2rem;">steve@hydehelps.ca</a>
+        <p style="color: #94a3b8; margin-bottom: 30px;">Strategic Partner to Quantlake</p>
+        <a href="mailto:steve@hydehelps.ca" style="color: var(--hh-accent); text-decoration: none; font-weight: 700;">steve@hydehelps.ca</a>
     </footer>
 
 </body>
