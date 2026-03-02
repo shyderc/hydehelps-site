@@ -5,11 +5,10 @@
       <stop offset="100%" stop-color="#1e40af" />
     </linearGradient>
   </defs>
-  <rect x="5" y="15" width="90" height="70" rx="8" fill="url(#plate-grad)"/>
-  <rect x="8" y="18" width="84" height="64" rx="6" stroke="white" stroke-width="1.5" opacity="0.3"/>
+  <rect x="5" y="15" width="90" height="70" rx="10" fill="url(#plate-grad)"/>
   
-  <path d="M22 30V70M38 30V70M22 50H38" stroke="white" stroke-width="9" stroke-linecap="square"/>
-  <path d="M62 30V70M78 30V70M62 50H78" stroke="white" stroke-width="9" stroke-linecap="square"/>
-  
-  <path d="M38 50H62" stroke="white" stroke-width="9"/>
+  <g fill="white">
+    <path d="M18 32V68M36 32V68M18 50H36" stroke="white" stroke-width="10" stroke-linecap="square"/>
+    <path d="M64 32V68M82 32V68M64 50H82" stroke="white" stroke-width="10" stroke-linecap="square"/>
+  </g>
 </svg>
