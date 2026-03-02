@@ -6,7 +6,7 @@
     </linearGradient>
   </defs>
   <rect width="100" height="100" rx="16" fill="url(#hhgrad)"/>
-  <path d="M28 35V65M42 35V65M28 50H42" stroke="white" stroke-width="6" stroke-linecap="round"/>
-  <path d="M58 35V65M72 35V65M58 50H72" stroke="white" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
-  <path d="M42 43H58" stroke="white" stroke-width="4" stroke-dasharray="2 2" opacity="0.6"/>
+  <path d="M25 35V65M40 35V65M25 50H40" stroke="white" stroke-width="7" stroke-linecap="round"/>
+  <path d="M60 35V65M75 35V65M60 50H75" stroke="white" stroke-width="7" stroke-linecap="round"/>
+  <path d="M40 50H60" stroke="white" stroke-width="4" stroke-dasharray="3 3" opacity="0.7"/>
 </svg>
