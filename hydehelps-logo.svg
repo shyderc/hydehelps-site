@@ -1,12 +1,12 @@
 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="hhgrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#818CF8;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#4F46E5;stop-opacity:1" />
+    <linearGradient id="hh-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#4F46E5" />
     </linearGradient>
   </defs>
-  <rect width="100" height="100" rx="16" fill="url(#hhgrad)"/>
-  <path d="M25 35V65M40 35V65M25 50H40" stroke="white" stroke-width="7" stroke-linecap="round"/>
-  <path d="M60 35V65M75 35V65M60 50H75" stroke="white" stroke-width="7" stroke-linecap="round"/>
-  <path d="M40 50H60" stroke="white" stroke-width="4" stroke-dasharray="3 3" opacity="0.7"/>
+  <rect width="100" height="100" rx="12" fill="url(#hh-grad)"/>
+  <path d="M22 30V70M38 30V70M22 50H38" stroke="white" stroke-width="8" stroke-linecap="square"/>
+  <path d="M62 30V70M78 30V70M62 50H78" stroke="white" stroke-width="8" stroke-linecap="square" opacity="0.8"/>
+  <path d="M38 45L62 45M38 55L62 55" stroke="white" stroke-width="3" stroke-dasharray="2 2" opacity="0.6"/>
 </svg>
