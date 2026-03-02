@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hydehelps Inc. | Strategic Partner to Quantlake</title>
+    <title>Hydehelps Inc. | Engineering Partner to Quantlake</title>
     
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
@@ -15,11 +15,11 @@
     
     <style>
         :root {
-            --ql-navy: #0f172a;      /* Quantlake Dark */
-            --ql-cyan: #06b6d4;      /* Quantlake Accent */
-            --ql-slate: #1e293b;     /* Deep Background */
+            --ql-navy: #0f172a;      /* Quantlake Primary Dark */
+            --ql-teal: #0d9488;      /* Quantlake Discipline Teal */
+            --ql-slate: #334155;     /* Text Secondary */
             --text-main: #f8fafc;
-            --text-dim: #94a3b8;
+            --bg-light: #f1f5f9;
         }
 
         * { box-sizing: border-box; }
@@ -40,24 +40,25 @@
         .brand-group { display: flex; align-items: center; gap: 15px; }
         .logo-img { height: 38px; border-radius: 4px; }
         .logo-text { font-weight: 800; font-size: 1.2rem; letter-spacing: -0.5px; text-transform: uppercase; }
-        .logo-text span { color: var(--ql-cyan); font-weight: 400; }
+        .logo-text span { color: var(--ql-teal); font-weight: 400; }
 
         .alliance-tag {
             font-size: 0.7rem;
-            background: #f1f5f9;
-            padding: 4px 10px;
+            background: var(--bg-light);
+            padding: 4px 12px;
             border-radius: 20px;
-            color: var(--ql-slate);
+            color: var(--ql-navy);
             font-weight: 600;
             display: flex;
             align-items: center;
             gap: 6px;
+            border: 1px solid #e2e8f0;
         }
 
         /* HERO */
         .hero { 
-            padding: 100px 5%; 
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); 
+            padding: 120px 5%; 
+            background: linear-gradient(160deg, #0f172a 0%, #1e293b 100%); 
             color: white; 
             text-align: left;
             position: relative;
@@ -65,41 +66,43 @@
         }
         
         .hero::after {
-            content: ""; position: absolute; top: -50%; right: -10%; width: 600px; height: 600px;
-            background: radial-gradient(circle, rgba(6,182,212,0.1) 0%, transparent 70%);
+            content: ""; position: absolute; top: -50%; right: -10%; width: 700px; height: 700px;
+            background: radial-gradient(circle, rgba(13, 148, 136, 0.15) 0%, transparent 70%);
         }
 
-        .hero h1 { font-size: 3.2rem; font-weight: 800; margin-bottom: 1rem; max-width: 800px; }
-        .hero p { font-size: 1.25rem; color: var(--text-dim); max-width: 600px; margin-bottom: 2rem; }
+        .hero h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 1.5rem; max-width: 850px; line-height: 1.1; }
+        .hero p { font-size: 1.3rem; color: #cbd5e1; max-width: 650px; margin-bottom: 2.5rem; font-weight: 300; }
 
         /* BUTTONS */
         .btn { 
-            background: var(--ql-cyan); color: white; padding: 12px 28px; border-radius: 6px; 
-            text-decoration: none; font-weight: 600; transition: 0.2s; display: inline-block;
+            background: var(--ql-teal); color: white; padding: 14px 32px; border-radius: 6px; 
+            text-decoration: none; font-weight: 600; transition: 0.3s; display: inline-block;
         }
-        .btn:hover { background: #0891b2; transform: translateY(-1px); }
+        .btn:hover { background: #0f766e; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(13,148,136,0.3); }
 
         /* PARTNERSHIP SECTION */
-        .partnership { padding: 80px 5%; background: #f8fafc; text-align: center; }
+        .partnership { padding: 100px 5%; background: var(--bg-light); text-align: center; }
         .partnership-box { 
-            max-width: 900px; margin: 0 auto; background: white; padding: 40px; 
-            border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            max-width: 1000px; margin: 0 auto; background: white; padding: 60px; 
+            border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.03);
             border: 1px solid #e2e8f0;
         }
-        .partner-logos { display: flex; justify-content: center; align-items: center; gap: 40px; margin-bottom: 25px; }
-        .partner-logos i { font-size: 2rem; color: #cbd5e1; }
-        .partner-label { text-transform: uppercase; font-size: 0.75rem; font-weight: 700; color: var(--ql-cyan); letter-spacing: 2px; }
+        .partner-logos { display: flex; justify-content: center; align-items: center; gap: 40px; margin-bottom: 30px; }
+        .partner-logos i { font-size: 1.5rem; color: #cbd5e1; }
+        .partner-label { text-transform: uppercase; font-size: 0.8rem; font-weight: 700; color: var(--ql-teal); letter-spacing: 3px; margin-bottom: 10px; }
+        .partnership-box p { font-size: 1.1rem; color: var(--ql-slate); max-width: 700px; margin: 0 auto; }
 
         /* EXPERTISE GRID */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; padding: 80px 5%; max-width: 1200px; margin: 0 auto; }
-        .card { padding: 32px; border-radius: 12px; border: 1px solid #e2e8f0; transition: 0.3s; }
-        .card:hover { border-color: var(--ql-cyan); box-shadow: 0 4px 20px rgba(0,0,0,0.04); }
-        .card i { color: var(--ql-cyan); font-size: 1.8rem; margin-bottom: 20px; }
-        .card h3 { font-size: 1.2rem; margin-bottom: 12px; }
-        .card p { font-size: 0.95rem; color: #64748b; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; padding: 100px 5%; max-width: 1200px; margin: 0 auto; }
+        .card { padding: 40px; border-radius: 16px; border: 1px solid #e2e8f0; transition: 0.4s; background: #fff; }
+        .card:hover { border-color: var(--ql-teal); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .card i { color: var(--ql-teal); font-size: 2rem; margin-bottom: 24px; }
+        .card h3 { font-size: 1.4rem; margin-bottom: 16px; font-weight: 700; color: var(--ql-navy); }
+        .card p { font-size: 1rem; color: var(--ql-slate); line-height: 1.7; }
 
-        footer { background: var(--ql-navy); color: white; padding: 60px 5%; text-align: center; }
-        .footer-email { color: var(--ql-cyan); text-decoration: none; font-size: 1.2rem; font-weight: 600; }
+        footer { background: var(--ql-navy); color: white; padding: 80px 5%; text-align: center; border-top: 4px solid var(--ql-teal); }
+        .footer-email { color: #5eead4; text-decoration: none; font-size: 1.3rem; font-weight: 600; transition: 0.2s; }
+        .footer-email:hover { color: white; }
     </style>
 </head>
 <body>
@@ -109,54 +112,54 @@
             <img src="logo.jpg" alt="Hydehelps" class="logo-img">
             <div class="logo-text">HYDE<span>HELPS</span></div>
             <div class="alliance-tag">
-                <i class="fas fa-shield-halved"></i> Quantlake Certified Partner
+                <i class="fas fa-certificate"></i> Official Quantlake Partner
             </div>
         </div>
-        <nav><a href="mailto:steve@hydehelps.ca?subject=Project Inquiry" class="btn">Contact Steve</a></nav>
+        <nav><a href="mailto:steve@hydehelps.ca?subject=Strategic Inquiry" class="btn">Connect with Steve</a></nav>
     </header>
 
     <section class="hero">
-        <h1>High-Performance Systems for Global Quant Strategies.</h1>
-        <p>Providing the North American engineering backbone for Quantlake's systematic ETF analysis and behavioral risk modeling.</p>
-        <a href="mailto:steve@hydehelps.ca" class="btn">Strategic Partnership Inquiry</a>
+        <h1>Engineering Clarity for Quantitative Investing.</h1>
+        <p>Hydehelps Inc. defines the high-performance infrastructure powering Quantlake's evidence-based ETF strategies and behavioral risk insights.</p>
+        <a href="mailto:steve@hydehelps.ca" class="btn">Strategic Alliance Inquiry</a>
     </section>
 
     <section class="partnership">
         <div class="partnership-box">
             <div class="partner-label">Strategic Alliance</div>
             <div class="partner-logos">
-                <div class="logo-text">HYDE<span>HELPS</span></div>
-                <i class="fas fa-link"></i>
-                <div class="logo-text" style="color: #0f172a;">QUANT<span>LAKE</span></div>
+                <div class="logo-text" style="font-size: 1.5rem;">HYDE<span>HELPS</span></div>
+                <i class="fas fa-plus"></i>
+                <div class="logo-text" style="color: #0f172a; font-size: 1.5rem;">QUANT<span>LAKE</span></div>
             </div>
-            <p>Hydehelps Inc. acts as the primary technical integration entity for Quantlake France, ensuring the seamless delivery of quantitative models to North American institutional standards.</p>
+            <p>We serve as the primary technical bridge for Quantlake, ensuring professional-grade systematic investment models meet the rigorous standards of North American institutions and individual investors alike.</p>
         </div>
     </section>
 
     <div class="grid">
         <div class="card">
-            <i class="fas fa-chart-line"></i>
-            <h3>Algorithmic Execution</h3>
-            <p>Specialized data pipelines for ETF backtesting and live signal generation.</p>
+            <i class="fas fa-brain"></i>
+            <h3>Behavioral Analytics</h3>
+            <p>Integrating advanced behavioral risk modeling to help investors outsmart market noise and stay disciplined through every cycle.</p>
         </div>
         <div class="card">
-            <i class="fas fa-network-wired"></i>
-            <h3>Hybrid Cloud Arch</h3>
-            <p>Resilient infrastructure designed to handle Quantlake's proprietary Herd Index™ data.</p>
+            <i class="fas fa-microchip"></i>
+            <h3>Systematic Execution</h3>
+            <p>High-reliability data pipelines for backtesting legendary investment strategies—from Bogle-inspired to ML-driven Smart portfolios.</p>
         </div>
         <div class="card">
-            <i class="fas fa-lock"></i>
-            <h3>Technical Compliance</h3>
-            <p>Bridging European FinTech innovation with Canadian/US regulatory requirements.</p>
+            <i class="fas fa-globe-americas"></i>
+            <h3>Compliance & Scale</h3>
+            <p>Translating global fintech innovation into resilient, compliant infrastructure for the Canadian and US financial markets.</p>
         </div>
     </div>
 
     <footer>
-        <div class="logo-text" style="color: white; margin-bottom: 10px;">HYDE<span>HELPS</span> INC.</div>
-        <p style="color: var(--text-dim); margin-bottom: 25px;">Official North American Partner to Quantlake.com</p>
+        <div class="logo-text" style="color: white; margin-bottom: 10px; font-size: 1.5rem;">HYDE<span>HELPS</span> INC.</div>
+        <p style="color: #94a3b8; margin-bottom: 30px; font-weight: 300;">Partner to Quantlake</p>
         <a href="mailto:steve@hydehelps.ca" class="footer-email">steve@hydehelps.ca</a>
-        <div style="margin-top: 40px; font-size: 0.75rem; color: #475569;">
-            &copy; 2026 Hydehelps Inc. All Rights Reserved.
+        <div style="margin-top: 50px; font-size: 0.8rem; color: #475569; letter-spacing: 1px;">
+            &copy; 2026 HYDEHELPS INC. ALL RIGHTS RESERVED.
         </div>
     </footer>
 
