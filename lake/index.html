@@ -51,8 +51,8 @@
             margin: 10px 0;
         }
         .phone-link:hover { color: var(--accent-blue); }
-        .footer { text-align: center; font-size: 0.8rem; color: var(--text-muted); margin: 4rem 0; }
-        .eng-section { border-top: 1px solid #30363d; margin-top: 3rem; padding-top: 2rem; }
+        .footer { text-align: center; font-size: 0.8rem; color: var(--text-muted); margin: 4rem 0; border-top: 1px solid #30363d; padding-top: 2rem; }
+        .eng-section { margin-top: 3rem; }
     </style>
 </head>
 <body>
@@ -60,23 +60,23 @@
 <header>
     <img src="../hh-logo.jpg" alt="HydeHelps Logo" class="logo">
     <h1>HydeHelps Lac Clair</h1>
-    <p style="color: var(--text-muted)">Aide technique et entretien de propriété</p>
+    <p style="color: var(--text-muted)">Entretien de propriété et aide technique locale</p>
 </header>
 
 <div class="container">
     <!-- SECTION FRANÇAISE -->
     <div class="card">
         <span class="lang-label">FRANÇAIS</span>
-        <h2>Services de Chalet</h2>
+        <h2>Services au Chalet</h2>
         <ul class="service-list">
-            <li><span class="icon">🚤</span> <div><strong>Marine et Bateaux :</strong> Entretien de moteurs hors-bord, moteurs électriques et systèmes de direction hydraulique.</div></li>
-            <li><span class="icon">🪵</span> <div><strong>Quais et Terrasses :</strong> Réparation, stabilisation et entretien général de structures en bois.</div></li>
-            <li><span class="icon">🚰</span> <div><strong>Plomberie et Pompes :</strong> Aide avec les systèmes d'eau de lac, pompes et réparations mineures.</div></li>
+            <li><span class="icon">🚤</span> <div><strong>Marine et Bateaux :</strong> Entretien de moteurs hors-bord, moteurs électriques et systèmes de direction.</div></li>
+            <li><span class="icon">🪵</span> <div><strong>Quais et Terrasses :</strong> Réparation, stabilisation et entretien de structures au bord de l'eau.</div></li>
+            <li><span class="icon">🚰</span> <div><strong>Plomberie et Pompes :</strong> Aide avec les systèmes d'eau du lac, pompes et réparations mineures.</div></li>
             <li><span class="icon">🔧</span> <div><strong>Réparations Générales :</strong> Des petits électroménagers complexes aux circuits électriques et capteurs.</div></li>
-            <li><span class="icon">📡</span> <div><strong>Techno et Réseaux :</strong> Optimisation Wi-Fi au chalet, caméras et configuration de serveurs.</div></li>
+            <li><span class="icon">📡</span> <div><strong>Techno et Réseaux :</strong> Optimisation Wi-Fi, caméras de surveillance et configuration de serveurs.</div></li>
         </ul>
         <div class="contact-box">
-            <p>Appelez ou textez pour de l'aide au lac :</p>
+            <p>Appelez ou textez :</p>
             <a href="tel:6133148624" class="phone-link">613-314-8624</a>
         </div>
     </div>
@@ -87,7 +87,7 @@
             <span class="lang-label">ENGLISH</span>
             <h2>Cottage Services</h2>
             <ul class="service-list">
-                <li><span class="icon">🚤</span> <div><strong>Marine & Boats:</strong> Outboard maintenance, trolling motors, and hydraulic steering systems.</div></li>
+                <li><span class="icon">🚤</span> <div><strong>Marine & Boats:</strong> Outboard maintenance, trolling motors, and steering systems.</div></li>
                 <li><span class="icon">🪵</span> <div><strong>Docks & Decks:</strong> Repairs, stabilization, and general maintenance for waterfront structures.</div></li>
                 <li><span class="icon">🚰</span> <div><strong>Plumbing & Pumps:</strong> Help with lake water systems, pump issues, and minor plumbing fixes.</div></li>
                 <li><span class="icon">🔧</span> <div><strong>General Repairs:</strong> From complex small appliances to electrical hardware and sensors.</div></li>
@@ -103,12 +103,12 @@
     <div class="footer">
         <p>Val-des-Monts, QC | Secrétaire, Association du Lac Clair</p>
         <p>&copy; <span id="year"></span> HydeHelps.ca</p>
-
-<script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
     </div>
 </div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
